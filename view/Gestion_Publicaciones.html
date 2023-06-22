@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>365MP</title>
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="../Recursos/css/index.css">
+    <link rel="stylesheet" href="../Recursos/css/Gestion_Trabajo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- barra lateral -->
+    <div class="sidebar">
+        <div class="logo_details">
+            <!--<img src="../Recursos/img/dashboard/logo.png" alt="">-->
+            <div class="logo_name">365MP</div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="index.html">
+                <i class="bx bx-grid-alt"></i>
+                <span class="link_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="Gestion_Publicaciones.html">
+                <i class='bx bx-calendar'></i>
+                <span class="link_name">Trabajo</span>
+            </a>
+            <span class="tooltip">Trabajo</span>
+        </li>
+        <li>
+            <a href="Trabajo.html">
+                <i class='bx bx-bell'></i>
+                <span class="link_name">Notificaciones</span>
+            </a>
+            <span class="tooltip">Notificaciones</span>
+        </li>
+        <li>
+            <a href="Calendario.html">
+                <i class='bx bx-calendar-alt'></i>
+                <span class="link_name">Calendario</span>
+            </a>
+            <span class="tooltip">Calendario</span>
+        </li>
+        <li class="profile">
+            <div class="profile_details">
+                <img src="../Recursos/img/dashboard/logo.png" alt="profile image">
+                <div class="profile_content">
+                    <div class="name">Anna Jhon</div>
+                    <div class="designation">Admin</div>
+                    <a href="Login.html">
+                        <i class="bx bx-log-out" id="log_out"></i>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+    </div>
+    <!-- Fin barra lateral -->
+    <!-- Informacion -->
+    <section class="home-section">
+        <!-- Seccion de publiaciones -->
+        <div class="container">
+            <h3>Tabla de Trabajo</h3>
+            <p class="lead"></p>
+            <hr>
+            <button type="button" class="btn btn-primary bx bx-plus" style="background-color: #9E8E8E;">Agregr Nueva
+                seccion</button>
+            <button type="button" class="btn btn-primary bx bx-expand-vertical"
+                style="background-color: #9E8E8E;">Ordenar</button>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="buscar publicacion...">
+            <span class="tooltip">Search</span>
+            <!-- Tablas de trabajo -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            "Nombre de Seccion"
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="cuadriculas">
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <!-- Tareas asignadas -->
+                                                <div class="container" id="cuadriculas">
+                                                    <div class="row">
+                                                        <div class="col-1 themed-grid-col"><input
+                                                                class="form-check-input me-1" type="checkbox" value=""
+                                                                aria-label="..."></div>
+                                                        <div class="col-1 themed-grid-col">Mes</div>
+                                                        <div class="col-2 themed-grid-col">Dia</div>
+                                                        <div class="col-4 themed-grid-col">Tema</div>
+                                                        <div class="col-3 themed-grid-col">Responsable</div>
+                                                        <div class="col-1 themed-grid-col">Edicion</div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-1 col-md-1 themed-grid-col"><input
+                                                                class="form-check-input me-1" type="checkbox" value=""
+                                                                aria-label="..."></div>
+                                                        <div class="col-1 col-md-1 themed-grid-col">I</div>
+                                                        <div class="col-2 col-md-2 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-4 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-3 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-1 themed-grid-col"></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-1 col-md-1 themed-grid-col"><input
+                                                                class="form-check-input me-1" type="checkbox" value=""
+                                                                aria-label="..."></div>
+                                                        <div class="col-1 col-md-1 themed-grid-col">I</div>
+                                                        <div class="col-2 col-md-2 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-4 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-3 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-1 themed-grid-col"></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-1 col-md-1 themed-grid-col"><input
+                                                                class="form-check-input me-1" type="checkbox" value=""
+                                                                aria-label="..."></div>
+                                                        <div class="col-1 col-md-1 themed-grid-col">I</div>
+                                                        <div class="col-2 col-md-2 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-4 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-3 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-1 themed-grid-col"></div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-1 col-md-1 themed-grid-col"><input
+                                                                class="form-check-input me-1" type="checkbox" value=""
+                                                                aria-label="..."></div>
+                                                        <div class="col-1 col-md-1 themed-grid-col">I</div>
+                                                        <div class="col-2 col-md-2 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-4 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-3 themed-grid-col"></div>
+                                                        <div class="col-2 col-md-1 themed-grid-col"></div>
+                                                    </div>
+                                                </div>
+                                                <!-- Fin Tareas asignadas -->
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            "Nombre de Seccion"
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <button type="button" class="btn btn-primary bx bx-plus" style="background-color: #9E8E8E;"
+                                id="AgregarNuevaPublicacion">
+                                Agregar publicacion
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Tabla de trabajo -->
+        </div>
+        <!-- Fin de seccion de publicaciones -->
+    </section>
+    <!-- Fin Informacion -->
+
+    <!-- Scripts -->
+    <script src="../Recursos/js/script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>365MP</title>
+    <link rel="stylesheet" href="../Recursos/css/index.css">
+    <link rel="stylesheet" href="../Recursos/css/trabajo.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- barra lateral -->
+    <div class="sidebar">
+        <div class="logo_details">
+            <!--<img src="../Recursos/img/dashboard/logo.png" alt="">-->
+            <div class="logo_name">365MP</div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search...">
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="index.html">
+                <i class="bx bx-grid-alt"></i>
+                <span class="link_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="Gestion_Publicaciones.html">
+                <i class='bx bx-calendar'></i>
+                <span class="link_name">Trabajo</span>
+            </a>
+            <span class="tooltip">Trabajo</span>
+        </li>
+        <li>
+            <a href="Trabajo.html">
+                <i class='bx bx-bell'></i>
+                <span class="link_name">Notificaciones</span>
+            </a>
+            <span class="tooltip">Notificaciones</span>
+        </li>
+        <li>
+            <a href="Calendario.html">
+                <i class='bx bx-calendar-alt'></i>
+                <span class="link_name">Calendario</span>
+            </a>
+            <span class="tooltip">Calendario</span>
+        </li>
+        <li class="profile">
+            <div class="profile_details">
+                <img src="profile.jpeg" alt="profile image">
+                <div class="profile_content">
+                    <div class="name">Anna Jhon</div>
+                    <div class="designation">Admin</div>
+                    <a href="Login.html">
+                        <i class="bx bx-log-out" id="log_out"></i>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+    </div>
+    <!-- Fin barra lateral -->
+    <!-- Informacion -->
+    <section class="home-section" id="informacion">
+        <div class="container">
+            <h3>Resumen de Trabajos</h3>
+            <p class="lead"></p>
+            <hr>
+
+            <div class="input-group" style="margin-left: 1%; padding-right: 80%;">
+                <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                </div>
+                <button type="button" class="btn btn-primary" style="background-color: black;">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!-- seccion desplegable -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Fechas pasadas 1 en total
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="container" id="cuadriculas">
+                                <div class="row">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <!-- Seccion publicaciones -->
+                                                <th scope="col">Nombre Publicacion</th>
+                                                <th scope="col">Tema</th>
+                                                <th scope="col">Dia</th>
+                                                <th scope="col">Mes</th>
+                                                <th scope="col">Responsable</th>
+                                                <th scope="col">Estado</th>
+                                                <!-- Fin seccion publicaciones -->
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Hoy 0 en total
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Esta semana 0 en total
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFort">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseFort" aria-expanded="false" aria-controls="collapseFort">
+                            Proxima Semana 0 en total
+                        </button>
+                    </h2>
+                    <div id="collapseFort" class="accordion-collapse collapse" aria-labelledby="headingFort"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                            data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Proxima Semana 0 en total
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-mdb-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin seccion despegable -->
+        </div>
+    </section>
+    <!-- Fin informacion -->
+
+
+
+    <!-- Scripts -->
+    <script src="../Recursos/js/script.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <!-- Fin Scripts -->
+</body>
+
+</html>
